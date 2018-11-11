@@ -1,0 +1,18 @@
+pipeline:
+  build:
+    image: node:10
+    commands:
+      - npm ci
+      - npm run flow:check
+  slack:
+    image: plugins/slack
+    username: Cyclops
+    webhook: https://hooks.slack.com/services/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
+    channel: ci
+    template: >
+      {{repo.name}} via {{build.author}}
+      {{#success build.status}}
+        build {{build.number}} succeeded. Good job.
+      {{else}}
+        build {{build.number}} failed. Fix me please.
+      {{/success}}
