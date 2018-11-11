@@ -1,0 +1,11 @@
+{
+  "name": "@lemon/herbs",
+  "version": "1.0.0",
+  "description": "Collection of useful things",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Gibsunas Consulting LLC",
+  "license": "MIT"
+}
