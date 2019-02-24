@@ -9,34 +9,37 @@ describe("Crust", () => {
 
         server.close();
     });
+
+    test("Server Respects Port assignment", () => {
+        const locator = new ServiceLocator();
+        const service:Installable = {
+            key: "config",
+            method: ():PieOptions => {
+                return {
+                    port: 3001
+                }
+            },
+        };
+        locator.install(service);
+        const {app, server} = new Server(locator);
+        
+        server.close();
+    });
+
+    test("Server Respects shouldListen", () => {
+        const locator = new ServiceLocator();
+        const service:Installable = {
+            key: "config",
+            method: ():PieOptions => {
+                return {
+                    port:3003
+                }
+            },
+        };
+        locator.install(service);
+        const shouldListen = new Server(locator);
+        const shouldNotListen = new Server(locator,{shouldListen:false});
+
+        shouldListen.server.close();
+    });
 });
-
-
-// test("Server Respects Port assignment", () => {
-//     const locator = new ServiceLocator();
-//     const service:Installable = {
-//         key: "config",
-//         method: ():PieOptions => {
-//             return {
-//                 port: 3001
-//             }
-//         },
-//     };
-//     locator.install(service);
-//     const server = new Server(locator);
-// });
-
-// test("Server Respects shouldListen", () => {
-//     const locator = new ServiceLocator();
-//     const service:Installable = {
-//         key: "config",
-//         method: ():PieOptions => {
-//             return {
-//                 port:3003
-//             }
-//         },
-//     };
-//     locator.install(service);
-//     const shouldListen = new Server(locator);
-//     const shouldNotListen = new Server(locator,{shouldListen:false});
-// });
