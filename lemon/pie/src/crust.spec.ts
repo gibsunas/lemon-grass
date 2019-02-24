@@ -5,9 +5,9 @@ import { Installable } from "@lemon/ice";
 test("Server Constructs", () => {
     const locator = new ServiceLocator();
     
-    const server = new Server(locator);
+    let server = new Server(locator);
 
-
+    server = undefined;
 });
 
 // test("Server Respects Port assignment", () => {
