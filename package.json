@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Collection of useful things",
   "scripts": {
+    "ci": "lerna link && lerna bootstrap",
     "test": "jest",
     "dev": "webpack -w"
   },
