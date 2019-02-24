@@ -1,10 +1,8 @@
 # @lemon/grass ~ Slightly Opinionated, Ever So Useful
 
+[![Lemon Grass Status](https://ci.gibsunas.co/api/badges/gibsunas/lemon-grass/status.svg)](https://ci.gibsunas.co/gibsunas/lemon-grass/)
+
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
-
-## CI
-
-[https://ci.gibsunas.co/gibsunas/lemon-grass](https://ci.gibsunas.co/gibsunas/lemon-grass)
 
 ## Packages
 
