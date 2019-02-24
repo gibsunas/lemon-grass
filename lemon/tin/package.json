@@ -1,0 +1,13 @@
+{
+  "name":"@lemon/tin",
+  "module":"./index.ts",
+  "description": "An empty shell",
+  "dependencies": {
+    "@lemon/ice": "1.0.0"
+  },
+  "version":"1.0.0",
+  "scripts": {
+    "tsc": "tsc --module commonjs"
+  }
+
+}

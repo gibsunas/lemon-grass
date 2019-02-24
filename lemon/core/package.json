@@ -1,0 +1,14 @@
+{
+  "name": "@lemon/seed",
+  "module":"./index.ts",
+  "version": "1.0.0",
+  "devDependencies":{
+    "@lemon/ice": "1.0.0"
+  },
+  "peerDependencies":{
+    "@lemon/ice": "1.0.0"
+  },
+  "scripts": {
+    "tsc": "tsc --module commonjs"
+  }
+}

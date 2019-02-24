@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Service Locator Constucts 1`] = `
+ServiceLocator {
+  "byKey": [Function],
+  "install": [Function],
+}
+`;

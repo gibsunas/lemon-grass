@@ -1,0 +1,25 @@
+{
+  "name":"@lemon/pie",
+  "module":"./index.ts",
+  "description": "Please Instantiate Express",
+  "dependencies": {
+    "body-parser":"1.18.3",
+    "cookie-parser": "1.4.3",
+    "cors": "2.8.5",
+    "morgan": "1.9.1"
+
+  },
+  "devDependencies": {
+    "@lemon/seed": "1.0.0",
+    "@lemon/ice": "1.0.0"
+  },
+  "peerDependencies": {
+    "@lemon/seed": "1.0.0",
+    "@lemon/ice": "1.0.0"
+  },
+  "version":"1.0.0",
+  "scripts": {
+    "tsc": "tsc --module commonjs"
+  }
+
+}

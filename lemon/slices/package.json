@@ -1,0 +1,13 @@
+{
+  "name":"@lemon/slices",
+  "module":"./index.ts",
+  "description": "Tiny slices of functionality that do one thing really well, ideally",
+  "dependencies": {
+    "@lemon/ice": "1.0.0"
+  },
+  "version":"1.0.0",
+  "scripts": {
+    "tsc": "tsc --module commonjs"
+  }
+
+}

@@ -1,0 +1,11 @@
+{
+  "name":"@lemon/ice",
+  "module":"./index.ts",
+  "description": "A collection of typings",
+  "dependencies": {},
+  "version":"1.0.0",
+  "scripts": {
+    "tsc": "tsc --module commonjs"
+  }
+
+}
