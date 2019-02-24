@@ -7,9 +7,6 @@ describe("Crust", () => {
         let locator = new ServiceLocator();
         
         let server = new Server(locator);
-    
-        server = undefined;
-        locator = undefined;
     });
 });
 
