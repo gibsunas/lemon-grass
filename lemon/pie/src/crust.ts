@@ -79,6 +79,8 @@ const onListening = (server) => () => {
     debug('Listening on ' + bind);
 };
 export class Server {
+    app: any;
+    server: any;
     constructor(dataProvider:Ice.Locator, options?:PieOptions) {
         return start(dataProvider, options);
     }
