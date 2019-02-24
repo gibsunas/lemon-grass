@@ -3,8 +3,8 @@ pipeline:
     image: node:10
     commands:
       - npm ci
-      - npm exec lerna link
-      - npm exec lerna bootstrap
+      - npm bin lerna link
+      - npm bin lerna bootstrap
       - npm run test
   slack:
     image: plugins/slack
