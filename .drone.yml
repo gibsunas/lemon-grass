@@ -12,7 +12,7 @@ pipeline:
     channel: ci
     icon_url: https://picsum.photos/256/256/?random
     template: >
-      {{repo.name}} via {{build.author}}
+      {{repo.name}} via {{build.author}} in {{since build.started}}
       {{#success build.status}}
         build {{build.number}} succeeded. Good job.
       {{else}}
