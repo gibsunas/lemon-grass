@@ -66,7 +66,7 @@ const start = (locator:Ice.Locator, inputOptions:PieOptions) => {
 
     server.on('error', console.error);
     server.on('listening', onListening(server));
-    return app;
+    return { app, server };
 };
 /**
  * Event listener for HTTP server "listening" event.

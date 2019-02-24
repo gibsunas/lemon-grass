@@ -4,9 +4,10 @@ import { Installable } from "@lemon/ice";
 
 describe("Crust", () => {
     test("Server Constructs", () => {
-        let locator = new ServiceLocator();
-        
-        let server = new Server(locator);
+        const locator = new ServiceLocator(); 
+        const {app, server} = new Server(locator);
+
+        server.close();
     });
 });
 
