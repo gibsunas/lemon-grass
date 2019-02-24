@@ -2,13 +2,17 @@ import { ServiceLocator } from "@lemon/seed";
 import { Server, PieOptions } from "./crust";
 import { Installable } from "@lemon/ice";
 
-test("Server Constructs", () => {
-    const locator = new ServiceLocator();
+describe("Crust", () => {
+    test("Server Constructs", () => {
+        let locator = new ServiceLocator();
+        
+        let server = new Server(locator);
     
-    let server = new Server(locator);
-
-    server = undefined;
+        server = undefined;
+        locator = undefined;
+    });
 });
+
 
 // test("Server Respects Port assignment", () => {
 //     const locator = new ServiceLocator();
